@@ -9,10 +9,10 @@ import retrofit2.http.Query
 
 interface ApiService {
     @GET("search/users")
-    @Headers("Authorization: token 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")
-    suspend fun getSearchListData(@Query("q") username : String) : SearchListResponse
+    @Headers("Authorization: token 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")
+    suspend fun getSearchListData(@Query("q") username: String): SearchListResponse
 
     @GET("users/{username}")
-    @Headers("Authorization: token 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")
-    suspend fun getUserData(@Path("username") username : String) : UserResponse
+    @Headers("Authorization: token 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")
+    suspend fun getUserData(@Path("username") username: String): UserResponse
 }
