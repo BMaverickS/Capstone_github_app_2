@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(detailsIntent)
         }
 
-        searchViewModel.setUsname("BMaverickS")
+        searchViewModel.setUsname("bmavericks")
         searchViewModel.search.observe(this, { search ->
             if (search != null)
             {
